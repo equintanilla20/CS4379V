@@ -1,44 +1,50 @@
 #include <iostream>
 #include <stdio.h>
 
-int cycle(int m) {
-    auto elements = 1; // elements is the number of elements in the sequence starting at m
-                       // end ending when m == 0
-    std::cout << "M Before Loop: " << m << std::endl;
-    std::cout << "Elements including m: " << elements << std::endl;
+int cycle(int m)
+{
+    int elements = 1; // elements is the number of elements in the sequence
+                      // starting at m end ending when m == 0
     while (m != 1)
     {
-        if (m % 2 != 0)
-        {
-            m = 3 * m + 1;
-        }
-        else
+        if (m % 2 == 0)
         {
             m /= 2;
         }
+        else
+        {
+            m = 3 * m + 1;
+        }
         elements++;
-        std::cout << "Elements++: " << elements << ", M: " << m << std::endl;
     }
     return elements;
 }
 
-int ThreeN(int m, int n) { // this code should call cycle
-    int max = 0;
+int ThreeN(int m, int n)
+{ // this code should call cycle
+    int max = -1;
+    int temp = 0;
+    if (m > n)
+    {
+        temp = m;
+        m = n;
+        n = temp;
+    }
     for (int i = m; i <= n; i++)
     {
-        if (cycle(i) > max)
+        int currentMax = cycle(i);
+        if (currentMax >= max)
         {
-            max = cycle(i);
-            std::cout << "MAX INT: " << i << std::endl;
+            max = currentMax;
         }
     }
     return max;
 }
 
-int main() {
-    auto m = 0, n = 0, max = 0, temp = 0;
-    auto mOriginal = 0, nOriginal = 0;
-    auto i = 0;
+int main()
+{
+    int m = 0, n = 0, max = 0, temp = 0;
+    int mOriginal = 0, nOriginal = 0;
 
     std::cin >> m;
     std::cin >> n;
@@ -53,6 +59,7 @@ int main() {
         m = n;
         n = temp;
     }
+
     max = ThreeN(m, n);
 
     printf("%d %d %d\n", mOriginal, nOriginal, max);
