@@ -1,11 +1,30 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+// test input: 5 1 6 7 9 14 5 2 3 8 12 13
 using namespace std;
 
 double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
+    // int first[]  = {1, 6, 7,  9, 14};
+    // int second[] = {2, 3, 8, 12, 13};
+    // int merge[]  = {1, 2, 3,  6,  7, 8, 9, 13, 14};
+    int median;
+    int m = nums1.size();
+    int mid1 = nums1.at(m/2);
+
+    int n = nums2.size();
+    int mid2 = nums2.at(n/2);
     
+    if (mid1 == mid2) {
+        median = (mid1+mid2) / 2;
+    } else if (mid1 < mid2) {
+
+    } else {
+
+    }
+
+    return median;
+
 }
 
 int main() {
@@ -47,7 +66,7 @@ int main() {
         }
         secondList.push_back(numbersList2);
     }
-
-    cout << "The median is " << findMedianSortedArrays(firstList, secondList) << endl;
+    findMedianSortedArrays(firstList, secondList);
+    // cout << "The median is " << findMedianSortedArrays(firstList, secondList) << endl;
     return 0;
 }
