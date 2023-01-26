@@ -3,6 +3,8 @@
 - Important algorithms
     1. Palindrome
     2. Fizzbuzz
+	3. Balanced parentheses (in some form) (postfix expression math)
+	4. Reverse array
 - Big-O
 	- Algorithms are measures by correctness and efficiency. Time and space.
 	- Used to describe the worst case efficiency.
@@ -57,3 +59,31 @@
 - Big Omega Formal Definition
     - Given functions f and g, saying f E Omega(g) is the same thing as g E O(f)
     - f(n) >= k * g(n) as n -> infinity
+
+### Data Structures (01/24/2023)
+- Office hours after class at Supple 257
+	- Talk to Kathia!!
+- Competitive Coding
+	- 3 most common problems
+		1. Greedy Algorithms
+		2. Dynamic Programming
+		3. Graph Algorithms
+	- Sign up and look for UVA(?). Guide coming.
+- Motivation
+	- Efficient algorithms often involve data structures as tools to solve a given problem
+	- Optimal solution to many interview questions will often involve more advanced data structures.
+	- Understand what to use when!
+- Template class: Defines a function in terms of generic types (in c++). Template can be used with different types
+- Abstract Data Structure: Pseudo code for a data structure so that any language can implement its functions.
+- Vectors: See C++ documentation for entry
+- Stacks: Last in first out
+	- Monotonic stacks
+		- Next Greater Element problem
+		- `size_t`, take a look at unsigned int 8, 16, etc.
+	- Balance Parentheses problem
+- Queue / Dequeue: First in first out. Dequeue adds and removes from both ends
+- Unordered
+	- The key is the value but there can be multiple values. `key:value, value, value` `{5:5, 5, 5}`
+	- Unordered Set
+	- Unordered Map, Kattis Quick Brown Fox pangram problem
+- Map
