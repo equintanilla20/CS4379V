@@ -20,8 +20,6 @@ int longestPal(std::string inString){
    return maxLength;
 }
 
-
-
 int main() {
   // read in the string of characters
   std::string inString = "";
