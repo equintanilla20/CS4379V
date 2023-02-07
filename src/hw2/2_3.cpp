@@ -36,6 +36,8 @@ int longestPal(std::string inString) {
     return max + odds;
 }
 
+
+
 int main() {
     // read in the string of characters
     std::string inString = "";
