@@ -87,3 +87,31 @@
 	- Unordered Set
 	- Unordered Map, Kattis Quick Brown Fox pangram problem
 - Map
+
+### Greedy Algorithms (2/2/2023)
+
+### Dynamic Programming (2/7/2023)
+- Write some pseudocode comments in Zybook exercises
+- Zybook 3_1: Kathia used a map to hold the opening braces and compares that with the input to determine balance
+- Dynamic Programming:
+    - Useful for Optimization and Search algorithms
+    - Optimal Structure
+        - Constructed from optimal solutions of its subproblems.
+        - If subproblems are overlapping dependning on recursive path, greedy algorithm won't work.
+        - Greedy tries to generate a solution as fast as possible vs searching for the optimal solution
+        - Depending on the problem, a fast solution may be OK.
+        - Global and local min/max
+            - Challenge: Avoid local mins or maxes. Greedy will pick locals
+            - Dynamic programming is an efficiently exhaustive solution.
+                - It will always generate the optimal solution. It may be slower.
+    - How?
+        1. Formulate sub problems
+        2. Express solution recursively in terms of the subproblems
+        3. Find the recurrence relation! Solve recursion without repeating the same subproblem twice
+        4. Memoization: Write down solutions to subproblems for future processing.
+    - Rocks example:
+        - Bottom up solution
+        - Square matrix to hold results
+    - Graph problems are bottoms up - we start with the smallest element and move to the biggest.
+    
+        
