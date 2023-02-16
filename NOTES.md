@@ -113,5 +113,49 @@
         - Bottom up solution
         - Square matrix to hold results
     - Graph problems are bottoms up - we start with the smallest element and move to the biggest.
+### Guest Speaker: Sam (2/9/2023)
+
+### Priority Queues and Heaps (2/14/2023)
+- Over the next few lectures, pay attention to 15-20 C++ things that we need to know.
+- Priority Queue is a wrapper over the heap ADT
+- Functor - function operator. Third parameter of `priority_queue<int, std::vector<int>, std::greater<int>>`
+- Priority Queue - Essential for graph problems
+    - Complete binary tree - tries to arrange the tree in a balanced way
+- STL Containers
+    - array
+    - vector
+    - deque - double ended queue
+    - forward_list - singly linked list
+    - list - double linked list
+- STL Associative Containers
+    - Sorted data structures with fast search algorithms
+    - Set 
+    - Map
+    - Multiset
+    - Multimap
+- STL Adapters
+    - Wrap other containers
+    - Stack
+    - Queue
+    - Priority Queue
+
+### Sorting (2/16/2023)
+- C++ things to know
+    1. auto
+        - type inference. made as a response to python in 2011.
+        - Useful in range based for loops
+    2. nullptr
+    3. range based for loops
+    4. lambda function
+        - In line anonymous function.
+        - `int even_count = count_of(nums.begin(), nums.end(), [](int num) {return num % 2 == 0});`
+- Career Prep
+    - Apply to 5 companies and follow through with interviews
+- Sorting
+    - Selection Sort
+    - Insertion Sort
+    - Quick Sort
+- Divide & Conquer
+    - Recursion trees
+    - Recurrence relations
     
-        

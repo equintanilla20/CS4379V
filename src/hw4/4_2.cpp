@@ -16,7 +16,6 @@ int maxNumberOfApples(vector<int>& weight) {
         if (tempWeight + weight[i] < maxWeight) {
             tempWeight += weight[i];
             pqueue.push(weight[i]);
-
         }
     }
     return pqueue.size();
