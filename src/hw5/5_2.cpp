@@ -80,26 +80,7 @@ int main() {
 
     std::cin >> w;
 
-    std::cout << findMaxWeight(profits, weights, sizeOfArrays, w) << std::endl;
+    std::cout << findMaxWeight(profits, weights, sizeOfArrays, w);
 
     return 0;
 }
-
-/*
-    // Base Case, no weights or max weight is 0
-    if (n == 0 || w == 0)
-        return 0;
- 
-    // If weight of the nth item is more
-    // than Knapsack capacity W, then
-    // this item cannot be included
-    // in the optimal solution
-    if (weights[n - 1] > w)
-        return findMaxWeight(profits, weights, n - 1, w);
- 
-    // Return the maximum of two cases:
-    // (1) nth item included
-    // (2) not included
-    else
-        return std::max(profits[n - 1] + findMaxWeight(profits, weights, n - 1, w - weights[n - 1]), findMaxWeight(profits, weights, n - 1, w));
-*/
