@@ -158,4 +158,64 @@
 - Divide & Conquer
     - Recursion trees
     - Recurrence relations
-    
+
+### <CLASS> (2/18/2023)
+
+### Master Method / Fast Sorting (2/21/2023)
+- Dynamic programming: Answers of a subproblem should already be computed as it runs.
+- C++ Things to Know:
+    - Smart Pointers
+        1. `std::unique_ptr`
+        2. `std::shared_pointer`
+        3. `std::weak_ptr`
+        4. `std::auto_ptr`
+    - `decltype`: returns the declared type of an expression passed to it.
+- Master Method
+    - Recurrence Relationship: An equation that recursively defines a sequence where the next term is a function of the previous terms.
+        - Fibonacci: `F_n = F_n-1 + F_n-2`
+        - Tower of Hanoi: `F_n = 2F_n-1 + 1;`
+    - Relation: `T(n) = a * T(n/b) + f(n^k)`
+        - `a > 0`: How many recursive calls do we make at each instance
+        - `b > 1`: By what multiplicative factor do we reduce the problem
+        - `f(n)`: How much work is done at each instance with Big-O.
+    - MergeSort
+        - `a = 2`: We make 2 calls
+        - `b = 2`: We cut the problem in half
+        - `f(n) = O(n)`: We do O(n) work
+        - `T(n) = 2 * T(n/2) + O(n)`
+    - BinarySearch
+        - `a = 1`
+        - `b = 2`
+        - `f(n) = O(1)`
+        - `T(n) = T(n/2) + O(1)`
+    - MATH BREAK
+        - `log_b(a) = c` is true when `b^c = a`
+        1. IF `log_b(a) < k`, THEN `T(N) E Θ(n^k)`
+        2. IF `log_b(a) = k`, THEN `T(N) E Θ(n^k * log(n))`
+        3. IF `log_b(a) > k`, THEN `T(N) E Θ(n^log_b(a))`
+    - Counting Sort
+        - AKA Bucket Sort
+        - O, Θ, and Ω all = `O(n + k)`
+    - Radix Sort
+
+### Trees (2/23/2023)
+- Homework review
+- Midterm in 2 weeks!!!!
+- C++ Things To Know
+    - Seven ways to initialize a vector
+        1. `vector<int> vec.push_back();`
+        2. `vector<int> vect(n, 10);`
+        3. `vector<int> vect{10, 20, 30};`
+        4. `vector<int> vect{arr, arr + n};`
+        5. `vectot<int> vect2(vect1.begin(), vec1.end());`
+        6. `fill(vec1.begin(), vec1.end(), value);`
+        7. `iota(arr, arr+5, 1);`
+- Trees
+    - Tree made of nodes
+    - Each node has value(s)
+    - Four functions of Binary Search Tree
+        1. Insert - O(height of tree) time complexity.
+        2. Find - O(h)
+        3. Delete - Most difficult process
+        4. Print
+    - Very efficient.
