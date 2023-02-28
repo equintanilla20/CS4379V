@@ -219,3 +219,21 @@
         3. Delete - Most difficult process
         4. Print
     - Very efficient.
+
+### Working with Trees (2/28/2023)
+- Career Prep
+    - Get 5 hours of interview practice
+    - How to Prepare for Coding Interviews - Sami's youtube
+- Trees
+    - Memorize how to do tree traversal
+        1. Preorder: do something with node then look at left and right children
+        2. In-order: look at left child, do something with node, look at right child
+        3. Postorder: look at left and right children, do something with node
+    - Naturally recursive
+    - Breadth first vs depth first
+- Data Compression
+    - Encode letters based on frequency with mroe frequent letters receiving shorter codes, etc.
+    - To decode, make a binary tree where the alphabet letters are leaves.
+    - Greedy algorithm useful because the problem is optimal, there is only one answer.
+    - Huffman code - optimal binary compression tree
+        - Always pair the two lowest frequencies when building tree
