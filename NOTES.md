@@ -237,3 +237,60 @@
     - Greedy algorithm useful because the problem is optimal, there is only one answer.
     - Huffman code - optimal binary compression tree
         - Always pair the two lowest frequencies when building tree
+
+### Self Leveling Trees, Intro to Graphs (3/2/2023)
+- Mid-term next Thursday!
+    - What were the main points of the lectures
+    - This class is about O(N). Understand Big-O for data structures and basic algorithms.
+    - Understand, pre order / post order traverse.
+    - Review C++ concepts
+    - If something should be known DEAD COLD, review it
+    - If it was on a homework, understand it
+    - Understand how to proceed with difficult topics like dynamic programming
+        - Partially filled out dynamic programming table: "Tell me what the most likely recurrence relation on this table"
+        - Recurrence relations: Master Method
+    - It will cover everything through Trees.
+- Trees
+    - Balancing a BST
+        - Best Case O(1)
+        - Worst Case O(n)
+        - Average O(nlogn)
+        - Allow dynamic insert and removal of O(logn)
+        - Definition: Left and right subtree of every node has a height difference no greater than one
+        - AVL Tree: Adelson-Velski Tree
+            - When manipulating nodes, tree goes through rotations till the height is balanced
+            - Pros:
+                - All operations are O(logn)
+                - Height balancing is constant to the speed of insert/delete
+            - Cons:
+                - DIfficult to program and debug
+                - More space for height field
+                - Asymptotically faster but balancing takes time
+                - Bad for large data sets
+    - B Trees
+        - Node can have more than one key and children
+        - m-way tree.
+    - Other trees:
+        - Red-Black Trees
+        - Splay Trees
+#### END OF EXAM 1 CONTENT
+
+- Graphs
+    - Adjacent vertices
+    - Adjacent edges
+    - Degree of a vertex
+        - Odd vertex
+        - Even vertex
+    - Path: Sequence of verticies such that each vertex is adjacent to the next
+        - Length of path is number of edges
+        - Circuit: starts and ends at the same vertex
+        - A graph is connected if any two vertices can be joined by a path, otherwise disconnected
+    - Components
+    - Bridge: If edge is removed
+    - All trees are graphs
+    - Not all graphs are trees
+        - Trees have no cycles
+    - Adjacency Matrix
+    - Adjacency List
+    - Directed Graph
+    - Leonhard Euler - Koenigsberg Bridge Problem
