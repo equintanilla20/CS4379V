@@ -294,3 +294,54 @@
     - Adjacency List
     - Directed Graph
     - Leonhard Euler - Koenigsberg Bridge Problem
+
+### Searching Graphps (3/7/2023)
+- Review:
+    - Graph G = (V, E)
+        - Vertex
+        - Edges
+    - Graph Representation
+        - Adjacency Matrix: grid of 0s or 1s.
+            - Space: Theta(V^2)
+            - Time: Theta(V)
+            - Time: to determine if (u, v) -E E:Theta(1)
+        - Adjacency List: Normally linked list
+- Why would we search a graph?
+    - To find something or find a relationship between things
+    - Dijkstra's Algorithm
+    - A* Search Algorithm
+    - Search Engines
+        - Page Rank
+    - Social Media Marketing (Community Detection)
+    - Network Flow
+- Searching a Graph
+    - The Algorithms
+    - BFS: Breadth-first search
+        - Vertex discovered: First time it is encountered
+        - Vertex finished: All adjacent vertices have been discovered
+    - DFS: Depth-first search
+        - Travel as far down the path with as little backing up as possible until reaching a dead end.
+        - Ends when next vertez is "marked" or there is no next vertex
+    - Shortest Path Algorithms
+        - Belman-Ford (1955-1958)
+        - Travelling Salesman Problem
+        - Single Source Shortest Path
+            - Dijkstra's (1959), O(V^2) - Uses min heap
+            - Dijkstra's with FIbonacci Heap aka Tarjans, O(E+VlogV)
+            - A* - Heuristic Guided Dijkstra
+        - Single Source Shortest Path, Non Negative or Directed Graph
+    - Edseger Dijkstra
+    - Bellman-Ford Algorithm
+        - Works for negative weights
+        - Detects a negative cycle if any exist
+        - Finds shortest path
+        - Negative Cycle
+    - Floyd-Warshall
+- MIDTERM STUFF
+    - findLowestOccuringElement
+        - if (m.count(x)) {m[x]++;} else {m[x] = 1;}
+    - 42 questions
+    - 75 minutes
+    - 2 minutes per question
+    - 14 pages
+    - Read the first page really carefully
