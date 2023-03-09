@@ -1,4 +1,12 @@
 # CS4379
+### CS Algorithms Day 1 (01/17/2023)
+- READ ZYBOOK BEFORE CLASS
+- 3 coding problems a week minimum.
+- 5% extra credit, leet code, tech meetups, appropriate projects
+- Office hours before/after classes, friday morning
+- Wednesday ~7pm Code Party
+- Languages to learn: C++, Golang, Rust
+
 ### Algorithm Performance I (01/19/2023)
 - Important algorithms
     1. Palindrome
@@ -60,7 +68,7 @@
     - Given functions f and g, saying f E Omega(g) is the same thing as g E O(f)
     - f(n) >= k * g(n) as n -> infinity
 
-### Data Structures (01/24/2023)
+### Data Structures (01/26/2023)
 - Office hours after class at Supple 257
 	- Talk to Kathia!!
 - Competitive Coding
