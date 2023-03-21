@@ -5,24 +5,30 @@
 #include <unordered_set>
 
 using namespace std;
-
+// Test Case: 2 10 20 4 2 17 18 19 2
 int latestTimeCatchTheBus(vector<int>& buses, vector<int>& passengers, int capacity) {
     std::sort(buses.begin(), buses.end());
     std::sort(passengers.begin(), passengers.end());
     std::queue<std::pair<int, int>> bq;
-    int answer = INT_MIN;
+    int answer = 0;
 
     for (int b : buses) {
         bq.push(std::make_pair(b, capacity));
     }
-
+	answer = passengers[1] - 1;
     for (int i = 0; i < passengers.size() - 1; i++) {
-        answer = passengers[i + 1] - 1;
+        
         if (bq.size() > 0 && passengers[i] <= bq.front().first && bq.front().second > 0) {
             bq.front().second--;
-        } else if (bq.size() > 0 && i < 3) {
-        
+			if (bq.front().second > 0 && passengers[i] < bq.front().first && passengers[i+1] > bq.front().first) {
+				answer = passengers[i+1] - 1;
+			}
+        } else if (bq.size() > 0 && bq.front().second == 0) {
+        	bq.pop();
         }
+		if (bq.size() == 0) {
+			answer = passengers[passengers.size()-1] + 1;
+		}
     }
     return answer;
 }
