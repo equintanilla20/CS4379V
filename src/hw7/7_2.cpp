@@ -6,30 +6,36 @@
 
 using namespace std;
 // Test Case: 2 10 20 4 2 17 18 19 2
+// Test Case: 3 20 30 10 7 19 13 26 4 25 11 21 2
+
 int latestTimeCatchTheBus(vector<int>& buses, vector<int>& passengers, int capacity) {
     std::sort(buses.begin(), buses.end());
     std::sort(passengers.begin(), passengers.end());
     std::queue<std::pair<int, int>> bq;
-    int answer = 0;
+    int answer = passengers[0] - 1;
 
     for (int b : buses) {
         bq.push(std::make_pair(b, capacity));
     }
-	answer = passengers[1] - 1;
-    for (int i = 0; i < passengers.size() - 1; i++) {
-        
-        if (bq.size() > 0 && passengers[i] <= bq.front().first && bq.front().second > 0) {
+
+    int i = 0;
+    while (bq.size() > 0) {
+        while (bq.front().second > 0 && i < passengers.size() && passengers[i] <= bq.front().first) {
+            // Fill buses with passengers as they depart/arrive respectively
+            if (i > 0 && passengers[i] != passengers[i - 1] + 1) {
+                answer = passengers[i] - 1;
+            }
+            i++;
             bq.front().second--;
-			if (bq.front().second > 0 && passengers[i] < bq.front().first && passengers[i+1] > bq.front().first) {
-				answer = passengers[i+1] - 1;
-			}
-        } else if (bq.size() > 0 && bq.front().second == 0) {
-        	bq.pop();
         }
-		if (bq.size() == 0) {
-			answer = passengers[passengers.size()-1] + 1;
-		}
+
+        // Check for empty seats and fill with answer
+        if (bq.front().second > 0 && i > 0 && passengers[i - 1] != bq.front().first) {
+            answer = bq.front().first;
+        }
+        bq.pop();
     }
+
     return answer;
 }
 
