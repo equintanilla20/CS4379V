@@ -28,3 +28,15 @@
     - Floyd-Warshall
 - Minimum Spanning Trees: Ch 13 in Zybook
 - Union Find
+
+### Bellman-Ford & Minimum Spanning Trees (3/30/2023)
+- Do Leetcode: #1631, #743
+- Timing Code: `#include <chrono>`, `auto start = std::chrono::steady_clock::now()`
+- Minimum Spanning Tree
+    - `https://visualgo.net/en/mst`
+    - READ TAKEAWAYS FOR FINAL
+    - Cut: How a graph is partitioned into two pieces
+    - Prim's Algorithm: Uses minheap to find and track smallest edges
+    - Kruskal's Algorithm
+        - Union Find: Joining subgraphs together by a rule
+        - Pick cheapest edges and connect subgraphs together
