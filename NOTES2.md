@@ -14,6 +14,7 @@
 - Topological Sort
 
 ### Searching, Backtracking, Weighted Graphs, Dijkstra's Algorithm (03/23/2023)
+- Write notes from slides
 
 ### Dykstra's Algorithm, Bellman-Ford (03/28/2023)
 - Book: Antti Laaksonen - Guide to Competitive Programming
@@ -40,3 +41,24 @@
     - Kruskal's Algorithm
         - Union Find: Joining subgraphs together by a rule
         - Pick cheapest edges and connect subgraphs together
+
+### Network Flow (4/4/2023)
+- This Thursday and next Thursday: Interview practice
+    - Watch Google and Meta mock interview
+    - Read open ended interview questions from slide link
+    - "Tell me about yourself"
+- Belman-Ford
+    - Shortest path that allows negative edge weights
+    - Find shortest path by constantly updating distance to each node till the target node is found.
+- Network Flow
+    - Flow rate from a source to a target
+    - Capacity Constraint
+    - Flow Conservation (in must equal out)
+    - Assumptions:
+        - Each vertex lies on some path from source to target
+        - If there is an edge from u->v, v-> doesn't exist
+        - All capacity weights are integers
+- Ford-Fulkerson
+    - Push flow along any path in the graph
+    - Find another path with more flow
+        - Finding `augmenting path` in `residual network`

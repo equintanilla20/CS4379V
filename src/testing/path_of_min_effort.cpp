@@ -22,8 +22,7 @@ int minimumEffortPath(std::vector<std::vector<int>>& heights) {
 
     minheap.push(element);
 
-    while(!minheap.empty()) {
-        std::cout << "Begin Loop" << std::endl;
+    while (!minheap.empty()) {
         std::vector<int> min = minheap.top();
         minheap.pop();
         int distance = min[0];
