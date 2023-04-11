@@ -62,3 +62,38 @@
     - Push flow along any path in the graph
     - Find another path with more flow
         - Finding `augmenting path` in `residual network`
+
+### Interview Practice (4/06/2023)
+- Interview Practice with Josh
+
+### Hashing (4/11/2023)
+- Basic Idea: Use a key to index a value directly into an array
+- Must minimize collisions
+    - Table size should be a prime number due to the cofactors of one and itself
+    - Folding
+    - Mid square
+    - Are all hashed keys likely to be seen? Answer might be "no"
+    - Horner's Rule: Efficient algorithm for computing polynomials
+- Best hash function to distribute keys evenly as possible in the table:
+    - "Simple Uniform Hashing"
+- Separate Chaining
+- Closed Hashing (or linear probing)
+- λ (load factor) = `number of keys / table size`
+- On a base level, if we need to make a table, make the size twice the number of keys we might potentially put in
+    - This allows any of the hashing techniques to efficiently place values
+- When `0 < λ < 1/2`, technique is efficienty. When `λ > 1/2` performance degrades. `λ = 0` is optimal
+- Lazy Deletion:
+    - When deleting, place a `#` symbol to indicate a value was deleted
+    - Squished Pigeon Principle
+- Rehashing
+    - When an insertion fails
+    - When `λ == 1/2`
+    - Cost: O(n)
+    
+
+### Interview Practice 3 (4/03/2023)
+- 
+
+### Bloom Filter / String Algorithms (4/18/2023)
+
+### String Algorithms (4/20/2023)
