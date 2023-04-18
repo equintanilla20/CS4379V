@@ -92,8 +92,22 @@
     
 
 ### Interview Practice 3 (4/03/2023)
-- 
 
 ### Bloom Filter / String Algorithms (4/18/2023)
+- Ask about LinkedIn discord channel
+- String Matching / Searching Algorithms
+- Rabin-Karp Algorithm
+    - Do some preprocessing to limit the total number of attempts
+    - Fingerprint idea
+        - Precompute a hash of the pattern and compare with a hash of the window
+    - Desirable Hash Function
+    - Bayesian Probability
+    - If hashes match, then compare character by character
+- Finite Automaton
+    - Deterministic Finite Automaton (State machine)
+    - How to generate Σ*
+        - B = Σ U {ε}
+        - F = {concat}
+        - DFA does not accept the empty set: {ε} if there are any accepting states
 
 ### String Algorithms (4/20/2023)
