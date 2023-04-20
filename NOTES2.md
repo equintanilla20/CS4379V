@@ -89,7 +89,6 @@
     - When an insertion fails
     - When `λ == 1/2`
     - Cost: O(n)
-    
 
 ### Interview Practice 3 (4/03/2023)
 
@@ -111,3 +110,7 @@
         - DFA does not accept the empty set: {ε} if there are any accepting states
 
 ### String Algorithms (4/20/2023)
+- Knuth-Morris-Pratt String Search Algorithm
+    - WATCH A YOUTUBE VIDEO
+    - Concept of `Suffix` and `Prefix`
+    - Pi table
