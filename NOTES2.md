@@ -114,3 +114,51 @@
     - WATCH A YOUTUBE VIDEO
     - Concept of `Suffix` and `Prefix`
     - Pi table
+
+### Class Cancelled (4/25/2023)
+
+### Class Review (4/27/2023)
+- FINAL EXAM
+    - Comprehensive but focused on second half material
+    - May 9th, TUESDAY, 11:00AM to 1:30PM, normal classroom
+1. Algorithm Performance
+2. Basic data structures
+3. Greedy Algorithms
+4. Dynamic Programming
+5. Heaps and Sorting
+6. STL Priority Queue
+7. Sort Properties
+8. Quick Sort
+9. Divide and Conquer
+10. Master Theorem
+11. Radix Sirt
+12. Trees
+13. Binary Search Tree
+14. AVL Tree
+15. Graph Basics
+16. Adjacency List / Matrix
+17. Graph Search
+18. Topological Sort
+19. Breadth-First Search (BFS)
+20. Depth-First Search (Backtracking)
+21. Weighted Graphs
+22. Dijkstra's Algorithm
+23. Shortest Path
+24. Bellan-Ford Algorithm
+25. Minimum Spanning Trees
+26. Spanning Tree
+27. Prim's Algorithm
+28. Kruskal's Algorithm
+29. Union-Find
+30. Network Flow Algorithms
+31. Ford-Fulkerson Method
+32. Hashing
+33. Collisions
+34. String Algorithms
+35. String Matching (Sliding Window)
+36. Rabin-Karp Algorithm
+37. DFA / Automata
+38. Knuth-Morris-Pratt (KMP) Matcher
+39. C++ Skills!
+40. Lambda Function
+41. 7 Ways to Initialize a Vector
