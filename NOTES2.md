@@ -122,26 +122,122 @@
     - Comprehensive but focused on second half material
     - May 9th, TUESDAY, 11:00AM to 1:30PM, normal classroom
 1. Algorithm Performance
+    - Big O notation:
+        1. O(1) - Constant Time
+        2. O(log(n)) - Logarithmic Time
+        3. O(n) - Linear Time
+        4. O(nlog(n)) - Linearithmic Time
+        5. O(n^2) - Quadratic Time
+        6. O(2^n) - Exponential Time
 2. Basic data structures
+    - Stack
+        - All actions are O(1)
+    - Queue
+        - All actions are O(1)
+    - Heap
+        - Complete binary tree maintained through heapifying.
+    - Trees
+        - Insert and delete are O(log(n))
+    - Dequeue
+    - Map
+    - Set
+    - Vector
 3. Greedy Algorithms
+    - Find fastest solution but not always the correct one
+    - Makes local optimal choice at a given step and moves forward to next step
 4. Dynamic Programming
+    - Find optimal solution always using overlapping sub problems
+    - Considers all choices past and present when choosing the optimal answer
+    - Forumlate problem through sub problems
+    - Expression solution to the problem recursively in terms of sub problems
+    - Find recurrence relation
+    - Write down subproblem answers through memoization to be used and reused
 5. Heaps and Sorting
+    - Heaps are represented in C++ by the priority queue.
+        - Can be made into min or max queue by using pqueue comparator function.
+    - Selection Sort
+        - NOT Stable
+        - NOT Adaptive
+        - In Place
+        - Omega(n^2)
+        - O(n^2)
+    - Insertion Sort
+        - Stable
+        - Adaptive
+        - In Place
+        - Omega(n)
+        - O(n^2)
+    - Quick Sort
+        - Not Stable
+        - Not Adaptive
+        - Not In Place
+        - O(n^2)
+        - Theta(nlogn)
+    - Merge Sort
+        - Divide and conquer
+        - Theta(nlogn)
 6. STL Priority Queue
 7. Sort Properties
 8. Quick Sort
 9. Divide and Conquer
 10. Master Theorem
-11. Radix Sirt
+    - `T(n) = a * T(n/b) + f(n)` OR
+    - `T(n) = a * T(n/b) + O(n^k)`
+    1. IF `log_b(a) < k` THEN `T(n) ∈ Θ(n^k)`
+    2. IF `log_b(a) == k` THEN `T(n) ∈ Θ(n^k * log(n))`
+    3. IF `log_b(a) > k` THEN `T(n) ∈ Θ(n^log_b(a))`
+11. Radix Sort
+    - Sort by the largest place value then next largest until all numbers are sorted properly
 12. Trees
+    - Trees are recursive
+        - Tree Traversal
+            1. Pre order
+            2. In order
+            3. Post order
+    - Binary Tree
+        - Each node has at most two children
 13. Binary Search Tree
+    - Each node with children has a value greater than the values of its left subtree and less than the values of its right sub tree
+    - Used for map, set, and priority queues
+    - Delete is hard. Need to make changes to maintain BST rules
+    - Operations
+        1. Search, add, and remove are O(1), Ω(n), Θ(log(n)). Space complexity is O(n) (stack frames)
 14. AVL Tree
+    - Self leveling tree
+    - Tree height is O(log(n))
+    - AVL Tree is a binary tree where the height of left and right subtrees of every node differs at most by 1
 15. Graph Basics
+    - Graphs are made of vertices and edges
+    - Adjacent Vertices and two vertices that are joined by an edge
+    - Adjacent edges are two edges that intersect at a vertex
+    - The Degree of a vertex is the number of edges at that vertex
+    - A path that starts and ends at the same vertex is called a CIRCUIT
+    - A graph is CONNECTED if any two vertices can be joined by a path, otherwise it is DISCONNECTED
+    - Connected parts of a disconnected graph are called COMPONENTS
+    - A BRIDGE is an edge in a connected graph whose removal makes it disconnected.
+    - Graphs can be directed where one may only travel in the direction of edges. Undirected means travel can go any way along an edge.
+    - If a path leads away from a node and then can return back to the node without reusing edges, it is CYCLIC.
 16. Adjacency List / Matrix
+    - Two methods for representing graphs
+    1. Adjacency Matrix - A 2D array where indices represent vertices and each entry at (i, j) will have 1 if an edge is present. (0 if not)
+    2. Adjacency List - A list of lists where each list at index i represents all neighbors for a vertex i.
 17. Graph Search
+    - Methods for searching graphs
 18. Topological Sort
+    - A linear ordering of all its vertices such that if the graph G contains an edge (u, v) then u appears before v in the ordering.
+    - A valid topological sort will have all pre-req nodes appear before the nodes that depend on those pre-reqs
 19. Breadth-First Search (BFS)
+    - Uses a queue
+    - From a starting node, check all the reachable adjacent nodes, once all these nodes are found, mark the starting node as finished then pop it from the queue and repeat with the next front node until all nodes are reached. Keep track of unvisited, visited, and finished nodes. 
+    - This method moves level by level through a graph.
+    - Used for finding shortest path
 20. Depth-First Search (Backtracking)
+    - Recursive
+    - Use a stack and move down nodes until a dead end is reached. Pop nodes off the stack until a node has another adjacent node then move down that path. Repeat until all nodes are visited.
+    - Can backtrack
 21. Weighted Graphs
+    - Used to represent real world situations like distances between cities, length of roads, server latencies, etc.
+    - Dijkstra's Algorithm finds the shortest path give a weighted graph with non-negative edge weights
 22. Dijkstra's Algorithm
 23. Shortest Path
 24. Bellan-Ford Algorithm
